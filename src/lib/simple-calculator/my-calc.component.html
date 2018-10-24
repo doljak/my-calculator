@@ -1,0 +1,20 @@
+<h2 #title>
+    <ng-content></ng-content>
+</h2>
+
+<div>
+    Enter value 1:<br/>
+    <input #v1 type="number"/>
+</div>
+
+<div>
+    Enter value 2:<br/>
+    <input #v2 type="number"/>
+</div>
+
+<p >{{result}}</p>
+
+<button (click)="add(v1.value, v2.value)"> + </button>
+<button (click)="subtract(v1.value, v2.value)"> - </button>
+<button (click)="multiply(v1.value, v2.value)"> * </button>
+<button (click)="divide(v1.value, v2.value)"> / </button>
